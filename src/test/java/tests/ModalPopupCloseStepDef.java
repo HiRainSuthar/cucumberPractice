@@ -1,6 +1,8 @@
-package Tests;
+package tests;
 
-import Util.driverUtil.InitDriver;
+import Utility.InitDriver;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,6 +10,16 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 
 public class ModalPopupCloseStepDef extends InitDriver {
+
+    @Before
+    public void browserInit() {
+        driverInit();
+    }
+
+    @After
+    public void closeBrowser() {
+        tearDown();
+    }
 
     @Given("User is on herokuApp landingpage")
     public void navigateToHomePage() {
