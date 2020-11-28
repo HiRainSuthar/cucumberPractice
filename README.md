@@ -1,6 +1,6 @@
 # Selenium testNG Cucumber Practice Project
 
-This project was build using below  :
+This project was build using below :
 
   - Build management tool - Maven
   - UI automation library - Selenium
